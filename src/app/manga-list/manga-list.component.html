@@ -1,0 +1,19 @@
+<table class="table">
+        <thead>
+                <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Type</th>
+                <th><button class="glyphicon glyphicon-plus"
+                        routerLink="new-manga"
+                        ></button></th>
+        </tr>
+        </thead>
+        <tbody>
+                <tr *ngFor="let manga of mangas">
+                        <td><a routerLink="manga/{{manga.id}}">{{manga.title}}</a></td>
+                        <td>{{manga.author}}</td>
+                        <td>{{manga.type}}</td>
+                </tr>
+        </tbody>
+</table>

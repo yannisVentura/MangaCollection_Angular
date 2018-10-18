@@ -1,0 +1,28 @@
+<h1 class='text-center'>{{title}}</h1>
+
+  <div class="row">
+      <div class="col-md-2 col-md-offset-5">
+          <img src="src/assets/img/albedo.png" class=" col-offset-6 centered img-fluid img-responsive" alt="Responsive image">
+      </div>
+  </div>
+
+  <p>
+      {{description}}
+  </p>
+
+  <table class="table">
+      <thead>
+              <tr>
+              <th scope="col">#tome</th>
+              <th scope="col">Chapters</th>
+              <th scope="col"><button class="btn btn-success">New tome</button></th>
+              </tr>
+      </thead>
+      <tbody>
+              <tr *ngFor="let tome of tomes">
+                      <td>{{tome.number+1}}</td>
+                      
+                      <td><p *ngFor="let chap of tome.chapters">{{chap}}</p></td>
+              </tr>
+      </tbody>
+</table>

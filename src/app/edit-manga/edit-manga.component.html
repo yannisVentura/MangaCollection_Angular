@@ -1,0 +1,42 @@
+<div class="row">
+  <div class="col-sm-8 col-sm-offset-2">
+    <form (ngSubmit)="onSubmit(f)" #f="ngForm">
+      <div class="form-group">
+        <label for="title">
+          Title
+        </label>
+        <input type="text" id="title" class="form-control">
+      </div>
+
+      <div class="form-group">
+          <label for="author">
+            Author
+          </label>
+          <input type="text" id="author" class="form-control">
+        </div>
+  
+        <div class="form-group">
+            <label for="desc">
+              Description
+            </label>
+            <textarea type="text" id="author" class="form-control"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="type">
+              What kind of manga is it ?
+            </label>
+            <select id="status" class="form-control">
+              <option value="Shônen">Shônen</option>
+              <option value="MagicalShôjo">Magical Shôjo</option>
+              <option value="ShôjoRomance">Shôjo Romance</option>
+              <option value="Seinen">Seinen</option>
+              <option value="Kodomo">Kodomo</option>
+              <option value="Hentail">Hentail</option>
+            </select>
+          </div>
+        
+      <button class="btn btn-success" type="submit">Enregistrer</button>
+    </form>
+  </div>
+</div>
